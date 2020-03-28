@@ -590,7 +590,10 @@ class AlarmPanelInterface(object):
             self.send_keypress([0x05, 0x27])
         elif option == 'instant':
             self.send_keypress([0x03, 0x04])
-
+            
+    def panic(self):
+        self.send_keypress([0x0c])
+        
     def send_keys(self, keys, group):
         msg = []
         for k in keys:
