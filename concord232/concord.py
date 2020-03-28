@@ -585,9 +585,9 @@ class AlarmPanelInterface(object):
 
     def arm_away(self,option):
         if option == None:
-            self.send_keypress([0x03])
+            self.send_keypress([0x27])
         elif option == 'silent':
-            self.send_keypress([0x05, 0x03])
+            self.send_keypress([0x05, 0x27])
         elif option == 'instant':
             self.send_keypress([0x03, 0x04])
 
