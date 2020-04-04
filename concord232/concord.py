@@ -592,7 +592,7 @@ class AlarmPanelInterface(object):
             self.send_keypress([0x03, 0x04])
             
     def panic(self):
-        self.send_keypress([0x0c])
+        self.send_keypress([0x4c])
         
     def send_keys(self, keys, group):
         msg = []
